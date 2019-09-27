@@ -1,0 +1,35 @@
+name: Initialize Repository
+
+on: [repository_dispatch]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+    - name: Properly initialize submodules
+      run: |
+        cd _data
+        rm *.*
+        cd ..
+        mkdir _data
+        git submodule add https://github.com/w3c/wai-website-data.git _external/data
+        cd _data
+        ln -s ../_external/data/lang.json
+        cp ../_external/data/navigation.yml navigation.yml
+        ln -s ../_external/data/techniques.yml
+        ln -s ../_external/data/translations.yml
+        ln -s ../_external/data/wcag.yml
+        cd ..
+        git submodule update --recursive --remote
+    - name: commit changed files
+      uses: stefanzweifel/git-auto-commit-action@v2.1.0
+      with:
+        commit_message: Apply automatic changes
+        branch: ${{ github.head_ref }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
