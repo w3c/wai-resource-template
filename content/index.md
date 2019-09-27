@@ -11,7 +11,7 @@ lang: en
 # - name: Contributor 2
 github:
   repository: wai-resource-template
-  path: index.md
+  path: content/index.md
 footer: > # Text in footer in HTML
   <p> This is the text in the footer </p>
 ---
