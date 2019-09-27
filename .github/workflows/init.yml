@@ -22,8 +22,8 @@ jobs:
         ln -s ../_external/data/translations.yml
         ln -s ../_external/data/wcag.yml
         cd ..
-        REPONAME = $GITHUB_REPOSITORY | sed -e "s|w3c/||"
-        sed -i "s/wai-resource/$REPONAME/g" file.txt
+#        REPONAME = $GITHUB_REPOSITORY | sed -e "s|w3c/||"
+#        find ./myFolder -type f -exec sed -i "s/wai-resource/${REPONAME}/g" '{}' \;
     - name: commit changed files
       uses: stefanzweifel/git-auto-commit-action@v2.1.0
       with:
