@@ -15,6 +15,13 @@ jobs:
     - name: Update Externals
       run: |
         git submodule update --remote
+        cd _data
+        rm lang.json techniques.yml translations.yml wcag.yml
+        ln -s ../_external/data/lang.json
+        ln -s ../_external/data/techniques.yml
+        ln -s ../_external/data/translations.yml
+        ln -s ../_external/data/wcag.yml
+        cd ..
     - name: commit changed files
       uses: stefanzweifel/git-auto-commit-action@v2.1.0
       with:
