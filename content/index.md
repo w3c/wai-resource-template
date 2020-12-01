@@ -1,26 +1,33 @@
 ---
+# translation notes are after after "#" in this section
+
 title: "Page Title"
-permalink: /link/to/page/
-ref: /link/to/page/
-lang: en
-# translators: # Uncomment (remove #) for translations, one - name line per translator.
-# - name: Translator 1
-# - name: Translator 2
-# contributors:
-# - name: Contributor 1
-# - name: Contributor 2
+ref: /link/to/page/   # Translators, do not change this
+
 github:
   repository: w3c/wai-resource-template
-  path: content/index.md
+  path: content/index.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
+permalink: /link/to/page/   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page/fr
+
+lang: en   # Change "en" to the translated language shortcode
+last_updated: 2020-02-20   # Put the date of this translation YYYY-MM-DD (with month in the middle)
+# translators:   # remove from the beginning of the line: "# " and add your name(s)
+# - name: Translator 1's Name
+# - name: Translator 2's Name
+# contributors:
+# - name: Contributor 1's Name
+# - name: Contributor 2's Name
+
 footer: > # Text in footer in HTML
   <p> This is the text in the footer </p>
+
 ---
 
 {::nomarkdown}
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod architecto excepturi incidunt, odit modi quidem deserunt doloremque molestias saepe. Iste dolor non repellendus laudantium! Nihil velit mollitia voluptatem ullam libero.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod architecto excepturi incidunt, odit modi quidem deserunt doloremque molestias saepe. Iste dolor non repellendus laudantium. Nihil velit mollitia voluptatem ullam libero.
 
 {::nomarkdown}
 {% include box.html type="end" %}
@@ -39,7 +46,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod architecto except
 
 ## Heading Level 2
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. **Assumenda aut, praesentium (bold)** commodi _nesciunt natus (italic)_ ipsum fugiat [voluptates nisi ipsam voluptas (Link)](https://example.com) recusandae, a. [Sunt eos veritatis numquam (Internal link)]({{ "/permalink/to/page/" | relative_url }})!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. **Assumenda aut, praesentium (bold)** commodi _nesciunt natus (italic)_ ipsum fugiat with **link markdown**:
+* [[Exact Title of Page on WAI website - uses double brackets and permalink]](/permalink/to/page/)
+* [link to WAI website that's not exact title of page - uses single brackets and permalink](/permalink/to/page/)
+* [link to page off the WAI website - uses single brackets and full URI](https://example.com)
 
 ### Heading Level 3
 
@@ -60,12 +70,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab lab
 
 ##### Heading Level 5
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
 
 ## Heading Level 2
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
 
 ### Heading Level 3
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
