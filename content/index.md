@@ -6,7 +6,7 @@
 
 title: "Page Title"
 title_html: "Main Title:<br>Other Part" # NEW: only needed if you need <br> or other in title. Otherwise, delete.
-nav_title: Short Title # NEW: (I think not used yet, but in place for possible future use.)
+nav_title: "Short Title" # NEW: (I think not used yet, but in place for possible future use.)
 
 lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 last_updated: 2021-02-20   # Put the date of this translation YYYY-MM-DD (with month in the middle)
