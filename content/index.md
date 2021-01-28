@@ -1,5 +1,5 @@
 ---
-# NEW: Comments for new repos start with “NEW”. Please delete the NEW comments. Leave the other comments for translators. Also, search for @@s to replace. For multi-page resources and other frontmatter info, see: https://wai-website-theme.netlify.app/writing/frontmatter/
+# NEW: Comments for new repos start with "NEW". Please delete the NEW comments. Leave the other comments for translators. Also, search for @@s to replace. For multi-page resources and other frontmatter info, see: https://wai-website-theme.netlify.app/writing/frontmatter/
 
 # Translation instructions are after the "#" character in this first section. They are comments that do not show up in the web page. You do not need to translate the instructions after #.
 # In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
@@ -27,11 +27,11 @@ permalink: /link/to/page/   # Add the language shortcode to the end, with no sla
 # navigation:
   # previous: /path/to/previous/file/
   # next: /path/to/next/file/
-# @@SLH To Do: figure out if need to add lang here, too, and if this replaces ‘order’ from older resources?
+# @@SLH To Do: figure out if need to add lang here, too, and if this replaces "order" from older resources?
 
 ref: /link/to/page/   # Translators, do not change this
 changelog: /@@/changelog/
-acknowledgements: /@@/acknowledgements/  # NEW: delete if don’t have a separate acknowledgements page. And delete it in the footer below.
+acknowledgements: /@@/acknowledgements/  # NEW: delete if don't have a separate acknowledgements page. And delete it in the footer below.
 license: creative-commons   # NEW: delete if not creative-commons
 
 description:  # NEW: add a 150ish-character-description for social media   # translate the description
