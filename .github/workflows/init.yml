@@ -21,8 +21,8 @@ jobs:
         ln -s ../_external/data/techniques.yml
         ln -s ../_external/data/translations.yml
         ln -s ../_external/data/wcag.yml
-# TODO what about navigation.yml?
         cd ..
+#        TODO what about navigation.yml?
 #        REPONAME = $GITHUB_REPOSITORY | sed -e "s|w3c/||"
 #        find ./myFolder -type f -exec sed -i "s/wai-resource/${REPONAME}/g" '{}' \;
     - name: commit changed files
