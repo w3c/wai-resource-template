@@ -40,7 +40,12 @@ feedbackmail: wai@w3.org  # NEW: delete this line if it’s an EOWG resource (th
 
 # NEW: Footer below has several options, and not all will be relevant for specific pages. (Ask Shawn if questions.)
 
-footer: >   # Do not translate or change CHANGELOG or ACKNOWLEDGEMENTS. Translate the other words below, including "Date:" and "Editor:" Translate the Working Group name. Leave the Working Group acronym in English. Do not change the dates in the footer below.
+# In the footer below:
+# Do not translate or change CHANGELOG or ACKNOWLEDGEMENTS.
+# Translate the other words below, including "Date:" and "Editor:"
+# Translate the Working Group name. Leave the Working Group acronym in English.
+# Do not change the dates in the footer below.
+footer: >
    <p><strong>Date:</strong> Updated @@ Month 2021. First published Month 20@@. CHANGELOG.</p>
    <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/@@wg/participants">participants of the @@WG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
    <p>Developed by the @@ Working Group (<a href="http://www.w3.org/WAI/@@/">@@WG</a>). Developed as part of the <a href="https://www.w3.org/WAI/@@/">WAI-@@ project</a>, @@co-funded by the European Commission.</p>
