@@ -19,10 +19,6 @@ last_updated: 2023-@@-@@   # Put the date of this translation YYYY-MM-DD (with m
 # - name: "Jan Doe"   # Replace Jan Doe with contributor name, or delete this line if none
 # - name: "Jan Doe"   # Replace Jan Doe with name, or delete this line if not multiple contributors
 
-github:
-  repository: w3c/wai-resource-template
-  path: content/index.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
-
   # NEW: 3 navigation lines below are only needed for multi-page resources where you have previous and next at the bottom. If so, un-comment them; otherwise delete these lines.
   # navigation:
   # previous: /path/to/previous/file/ # Do not change this
