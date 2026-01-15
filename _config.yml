@@ -7,31 +7,28 @@
 
 # Site settings
 title: "Web Accessibility Initiative (WAI)"
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   The Website of the World Wide Web Consortium’s Web Accessibility Initiative.
-baseurl: "/wai-resource-template" # the subpath of your site, e.g. /blog
-url: "https://w3c.github.io" # the base hostname & protocol for your site
-twitter:
-  username: w3c_wai
-author: w3c_wai
+baseurl: "/wai-resource-template" # the subpath of your site (for GitHub Pages)
+url: "https://w3c.github.io" # the base hostname & protocol for your site (for GitHub Pages)
 exclude:
   - "_external"
   - "Gemfile"
   - "Gemfile.lock"
   - "README.md"
   - "w3c.json"
+repository: w3c/wai-resource-template
+branch: main
 
 # Build settings
 markdown: kramdown
-kramwdown:
+kramdown:
   toc_levels: 2..3
   input: GFM
   syntax_highlighter: rouge
 highlighter: rouge
-repository: w3c/wai-resource-template
 
-remote_theme: w3c/wai-website-theme
+theme: wai-website-theme
 
 collections:
 #  business-case:
@@ -50,17 +47,3 @@ defaults:
       path: ""
     values:
       layout: "default"
-#  -
-#    scope:
-#      path: "_business-case"
-#    values:
-#      layout: "sidenav"
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jekyll-include-cache
-  - jekyll-paginate
-  - jekyll-remote-theme
-  - wai-website-plugin
